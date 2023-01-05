@@ -183,7 +183,7 @@ a:hover {
     -webkit-transform: rotate(45deg);
     transition: 0.3s;
     animation: bounce 3s infinite;
-    margin: 20px;
+    margin: 50px;
 }
 
 .next-arrow:hover {
