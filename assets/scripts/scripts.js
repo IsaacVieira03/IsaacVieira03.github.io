@@ -48,3 +48,12 @@ function scrollFunction() {
     }
 }
 
+//Remove hidden class of project cards to show, acts as dropdown
+document.getElementById('showprojlist').addEventListener('click', function() {
+    document.getElementById('pythonproj').classList.remove('extendmyproj');
+    document.getElementById('csharpproj').classList.remove('extendmyproj');
+    document.getElementById('mixproj').classList.remove('extendmyproj');
+    document.getElementById('javaproj').classList.remove('extendmyproj');
+});
+
+
