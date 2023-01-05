@@ -106,54 +106,94 @@
 
             <!--Projects-->
             <section class="container column" id="project-section">
+                <h1 class="subtitle">projects</h1>
+                <p>all projects are stored on university gitlab which is private <br> available upon request <br></p>
                 <div id="proj-container">
-                    <div class="project-card mainprojcard" id="showprojlist">
-                        <div class="card-header">
-                            <h1 class="card-heading">my projects</h1>
-                            <i class="fa-solid fa-diagram-project" style="color: rebeccapurple;"></i>
-                            <p class="card-subheading">all relevant projects</p>
-                        </div>
+                    <!--Filter Buttons-->
+                    <div class="container row" id="button-section">
+                        <button class="filter-button active" onclick="filterSelection('all')">all</button>
+                        <button class="filter-button" onclick="filterSelection('python')">python</button>
+                        <button class="filter-button" onclick="filterSelection('csharp')">c#</button>
+                        <button class="filter-button" onclick="filterSelection('java')">java</button>
+                        <button class="filter-button" onclick="filterSelection('web')">web dev</button>
                     </div>
-                    <div class="project-card extendmyproj" id="pythonproj">
-                        <div class="card-header">
-                            <h1 class="card-heading">python projects</h1>
-                            <i class="fa-solid fa-diagram-project" style="color: rebeccapurple;"></i>
-                            <p class="card-subheading">most recent to least recent</p>
+
+                    <!--Individual Projects-->
+                    <div class="container row" id="project-container">
+
+                        <div class="each-project python">
+                            <img class="proj-img makemepurple" src="assets/img/hangman.png"/>
+                            <div class="proj-description container column">
+                                <div class="img-description">
+                                    <h2>Hangman</h2>
+                                    <p>A take on the traditional game of hangman. Using <b>object-oriented</b> programming paradigms.</p>
+                                        <br>
+                                        <br>
+                                        <i class="prog-langs">Python</i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-attribute"><strong>hangman console game </strong> <strong class="prog-langs"> Python </strong>  more info</p>
+
+                        <div class="each-project java">
+                            <img class="proj-img makemepurple" src="assets/img/wormhole.png"/>
+                            <div class="proj-description container column">
+                                <div class="img-description">
+                                    <h2>Wormhole</h2>
+                                    <p>Developed a game using <b>object-oriented</b> programming paradigms where a player rolls dice and avoids wormholes to reach the end. Wormholes randomly generated on board. Using <b>gradle</b> to compile.</p>
+                                    <br>
+                                    <i class="prog-langs">Java</i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card extendmyproj" id="javaproj">
-                        <div class="card-header">
-                            <h1 class="card-heading">java projects</h1>
-                            <i class="fa-solid fa-diagram-project" style="color: rebeccapurple;"></i>
-                            <p class="card-subheading">most recent to least recent</p>
+
+                        <div class="each-project csharp">
+                            <img class="proj-img" src="assets/img/streamsniping.png"/>
+                            <div class="proj-description container column">
+                                <div class="img-description">
+                                    <h2>Rust Stream Sniping Tool</h2>
+                                    <p>Created <b>.NET</b> application that allows a user to quickly scan the maps of tens of thousands of online servers using <b>threading</b> given information about monuments on that map. Finally outputting the servers with a map fitting those criteria.</p>
+                                    <i class="prog-langs">C#</i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-attribute"><strong>wormhole console game </strong> <strong class="prog-langs"> Java </strong> more info</p>
-                            <p class="card-attribute"><strong>document word counter </strong> <strong class="prog-langs"> Java </strong> more info</p>
+
+                        <div class="each-project java web">
+                            <img class="proj-img makemepurple" src="assets/img/employeemanagement.png"/>
+                            <div class="proj-description container column">
+                                <div class="img-description">
+                                    <h2>Employee Management System</h2>
+                                    <p>Developed <b>front and back-end</b> of system to allow supervisors to manage employees using <b>Spring data, security</b> and other Spring frameworks. <b>Using given requirements</b> and brief from company <b>Graphium.AI</b>. Followed <b>agile methodology</b> during the development process. Acted as <b>scrum master</b> for one of development weeks. Used <b>JUnit</b> to test application before deployment.</p>
+                                    <br>
+                                    <i class="prog-langs" >Java / HTML / CSS / JavaScript / SQL / Springboot</i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card extendmyproj" id="csharpproj">
-                        <div class="card-header">
-                            <h1 class="card-heading">c# projects</h1>
-                            <i class="fa-solid fa-diagram-project" style="color: rebeccapurple;"></i>
-                            <p class="card-subheading">most recent to least recent</p>
+
+                        <div class="each-project python web">
+                            <img class="proj-img" src="assets/img/highsheriff.png"/>
+                            <div class="proj-description container column">
+                                <div class="img-description">
+                                    <h2>High Sheriff of Gwent Website</h2>
+                                    <p>Constructed a plan <b>using given requirements and brief</b> from the soon to be High Sheriff of Gwent and developed <b>front-end to back-end</b> system to act as a website for a public government official. </p>
+                                    <br>
+                                    <i class="prog-langs">Python / HTML / CSS / JavaScript / SQL / Flask</i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-attribute"><strong>stream sniping tool </strong> <strong class="prog-langs"> C# </strong> more info</p>
-                        </div>
-                    </div>
-                    <div class="project-card extendmyproj" id="mixproj">
-                        <div class="card-header">
-                            <h1 class="card-heading">mixed projects</h1>
-                            <i class="fa-solid fa-diagram-project" style="color: rebeccapurple;"></i>
-                            <p class="card-subheading">most recent to least recent</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-attribute"><strong>employee management system </strong> <strong class="prog-langs"> Java/HTML/CSS/JavaScript/SQL </strong> more info</p>
-                            <p class="card-attribute"><strong>public official website </strong> <strong class="prog-langs"> Python/HTML/CSS/JavaScript/SQL </strong> more info</p>
+
+                        <div class="each-project web">
+                            <img class="proj-img makemepurple" src="assets/img/website.png"/>
+                            <div class="proj-description container column">
+                                <div class="img-description">
+                                    <h2>Personal Website</h2>
+                                    <p>Using pure <b>HTML, CSS and Javascript</b>!</p>
+                                    <br>
+                                    <a href="https://github.com/IsaacVieira03/IsaacVieira03.github.io" target="_blank">Repository for this website</a>
+                                    <br>
+                                    <br>
+                                    <i class="prog-langs">HTML / CSS / JavaScript</i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
