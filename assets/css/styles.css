@@ -212,15 +212,16 @@ a:hover {
 }
 
 .card {
-    width: 50%;
+    width: 100%;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 900px;
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     text-align: center;
+    font-size: larger;
 }
 
 
@@ -257,4 +258,10 @@ a:hover {
     height: 250px;
     object-fit: cover;
     overflow-y:hidden;
+}
+
+/**Projects**/
+
+#project-section {
+    margin: 50px;
 }
