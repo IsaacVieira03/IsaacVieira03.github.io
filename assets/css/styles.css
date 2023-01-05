@@ -131,3 +131,76 @@ a:hover {
     color: rebeccapurple;
     font-size:14px;
 }
+
+/**Home**/
+#home-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+#landing-container {
+    padding-right: 4%;
+}
+
+#landing-text {
+    max-width:90%;
+    text-align: center;
+}
+
+.title {
+    max-width: 100%;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-size: 175%;
+}
+
+#intro-text {
+    font-size:150%;
+}
+
+#profile-icon {
+    width: 500px;
+}
+
+.next-arrow {
+    border: solid rebeccapurple;
+    border-color: rebeccapurple;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: 0.3s;
+    animation: bounce 3s infinite;
+    margin: 20px;
+}
+
+.next-arrow:hover {
+    -webkit-animation-play-state: paused;
+    opacity: 60%;
+    transform: scale(1.25) rotate(45deg);
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) rotate(45deg);
+    }
+    40% {
+        transform: translateY(-30px) rotate(45deg);
+    }
+    60% {
+        transform: translateY(-15px) rotate(45deg);
+    }
+}
