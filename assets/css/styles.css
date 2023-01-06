@@ -243,7 +243,8 @@ a:hover {
 }
 
 .card-img {
-    width: 100%;
+    width: 50%;
+    height: 50%;
     max-height: 300px;
     overflow-y:hidden;
     border-radius: 50%;
@@ -319,8 +320,9 @@ ul {
     background-color: #f1f1f1;
     cursor: pointer;
     border-radius: 4px;
-    margin: 4px;
+    margin: 2px;
     transition: 0.3s;
+    width: 15vw;
 }
 
 .filter-button:hover {
@@ -392,7 +394,7 @@ ul {
 }
 
 .img-description i, .img-description p, .img-description a {
-    font-family: 'Lato', sans-serif;
+    font-family: Kodchasan, sans-serif;
     text-decoration: none;
     font-weight: 100;
     line-height: 24px;
