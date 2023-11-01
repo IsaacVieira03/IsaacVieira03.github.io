@@ -163,6 +163,7 @@ a:hover {
     letter-spacing: 2px;
     max-width: 100%;
     font-size: 175%;
+
 }
 
 #intro-text {
@@ -297,6 +298,24 @@ ul {
 #progress {
     font-size: 80%;
 }
+
+#entertainment-rocket {
+    position: relative;
+    animation: shoot-rocket-please 1s linear infinite;
+}
+
+@keyframes shoot-rocket-please {
+    from {
+        transform: translateX(-200%) translateY(-50%);
+    }
+    75% {
+        transform: translateX(200%) translateY(50%) scaleX(-1);
+    }
+    to {
+        transform: translateX(-200%) translateY(-50%);
+    }
+}
+
 /**Projects**/
 
 #project-section {
@@ -365,6 +384,9 @@ ul {
     filter: invert(16%) sepia(75%) saturate(3764%) hue-rotate(283deg) brightness(88%) contrast(112%);
 }
 
+.makemegold {
+    filter: invert(76%) sepia(34%) saturate(5867%) hue-rotate(12deg) brightness(115%) contrast(93%);
+}
 
 .proj-description {
     position: absolute;
